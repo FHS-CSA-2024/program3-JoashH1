@@ -25,10 +25,13 @@ import java.util.Scanner; //This imports the console scanner that reads user inp
             
             
             //Calculate
-            
+            area = 0; //Actually calc here
+            perimeter = 0; //Actually calc here
             //Output
             System.out.println("The length is:" + length);
             System.out.println("The width is:" + width);
+            System.out.println("The area is:" + area);
+            System.out.println("The perimeter is:" + perimeter);
         }
     }
 
