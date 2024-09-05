@@ -1,36 +1,23 @@
-//Program 3
-//Extension of program 2 that now asks for user input when assigning the length and width of the sides
-import java.util.Scanner; //This imports the console scanner that reads user input
 
-//Your code here:
-    class Program3 {
-        public static void main(String[] args) {
-            Scanner myScanner = new Scanner(System.in);
-            
-            int length = 0;
-            int width = 0;
-            int area = 0;
-            int perimeter = 0;
-            
-            
-            
-            //Ask for user input
-            System.out.println("Please enter length:");
-            length=myScanner.nextInt();
-            
-            System.out.println("Please enter width:");
-            width=myScanner.nextInt();
-            
-            //Get input
-            
-            
-            //Calculate
-            
-            //Output
-            System.out.println("The length is:" + length);
-            System.out.println("The width is:" + width);
-        }
-    }
+
+import java.util.Scanner; public class RectangleCalculator 
+{ 
+    public static void main(String[] args)
+{ 
+// Create a Scanner object to take input from the user 
+Scanner scanner = new Scanner(System.in); 
+// Prompt the user for the length and width of the rectangle 
+System.out.print("Enter the length of the rectangle: "); 
+    double length = scanner.nextDouble(); 
+    System.out.print("Enter the width of the rectangle: "); 
+    double width = scanner.nextDouble(); 
+// Calculate the area and perimeter 
+    double area = length * width; double perimeter = 2 * (length + width); 
+// Output the results 
+    System.out.println("Area of the rectangle: " + area); 
+    System.out.println("Perimeter of the rectangle: " + perimeter); 
+    // Close the scanner 
+    scanner.close(); } }
 
 
 
